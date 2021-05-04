@@ -107,10 +107,12 @@ btn[5].addEventListener('click',function(){
         if(!value&&value!=0){
             alert('Enter Valid Numbers');
         }
+        else if(value<0){
+
+            area.innerText=value+value2;
+        }
         else{
             area.innerText=`${value1%value2}`;
-            n1.value=value;
-            n2.value='';
         }
     }
 
